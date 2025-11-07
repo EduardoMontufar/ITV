@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/confetti.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #7c2323;
+      margin: 0;
+      padding: 0;
+    }
+    #header {
+      background-color: #e65151;
+      border-radius: 50px;
+      padding: 6px;
+    }
+
+    .nav {
+      padding-right: 30px;
+    }
+
+    .nav ul li{
+      display:inline;
+      padding:0 10px
+    }
+
+    h1 {
+      text-align: center;
+      color: rgb(240, 240, 240);
+      margin: 8px;
+    }
+    h3 {
+      text-align: center;
+      color: rgb(240, 240, 240);
+      margin: 8px;
+    }
+    #seccion {
+      display: flex;
+      flex-direction: row;  
+      flex-wrap:wrap
+    }
+
+    .barra {
+      padding: 10px;
+      margin:5px;
+      background: #7c2323;
+      flex:3;
+      border-radius:10px;
+      display:flex;
+      flex-flow:column;
+      align-items:center;
+    }
+
+    .contenido {
+      padding: 10px;
+      border-radius:10px;
+      background: #56070c;
+      margin:5px;
+      flex:1 150px;
+    }
+
+    .subcontenido2 {
+      display:flex;
+      flex-direction:row;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+
+    #resultado {
+      display:flex;
+      flex-direction:column;
+      flex-wrap:wrap;
+      align-items: center;
+    }
+    
+    #footer {
+      background-color: #7c2323;
+      height: 100%;
+      text-align: center;
+      padding-top: 10px;
+      border-radius: 10px;
+      display:flex;
+      flex-flow:row;
+    }
+    .pie {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    #galeria{
+      display:flex;
+      flex-direction:row;
+      flex-wrap:wrap; 
+      height:100px;
+    }
+
+    .proyecto{
+      
+      height:150px;
+      max-width:150px;
+      background-color:rgb(138, 31, 31);
+      border-radius:10px;
+      margin:10px;
+      flex:1 100px;
+    }
+
+    .barra a {
+      display:block;
+    }
+    #imagen-interactiva {
+      position: relative;
+      width: 1000px;
+      height: 550px;
+      background-image: url('images/panigale.webp');
+      background-size: cover;
+      border: 2px solid #00000000;
+      border-radius: 10px;
+    }
+
+    #hotspot1 {
+      position: absolute;
+      top: 327px;
+      left: 478px;
+      width: 40px;
+      height: 40px;
+      background-color: #e7474280;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    #hotspot2 {
+      position: absolute;
+      top: 352px;
+      left: 176px;
+      width: 40px;
+      height: 40px;
+      background-color: #e7474280;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+      #hotspot3 {
+      position: absolute;
+      top: 200px;
+      left: 700px;
+      width: 40px;
+      height: 40px;
+      background-color: #e7474280;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    #hotspot4 {
+      position: absolute;
+      top: 200px;
+      left: 500px;
+      width: 40px;
+      height: 40px;
+      background-color: #e7474280;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    #hotspot5 {
+      position: absolute;
+      top: 150px;
+      left: 800px;
+      width: 40px;
+      height: 40px;
+      background-color: #e7474280;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    #hotspot6 {
+      position: absolute;
+      top: 130px;
+      left: 680px;
+      width: 40px;
+      height: 40px;
+      background-color: #e7474280;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+
+    .text-hotspot {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-weight: bold;
+    }
+
+    #instrucciones {
+      flex:1;
+      cursor: pointer;
+    }
+
+    #prueba {
+      flex:1;
+      cursor:pointer;
+    }
+
+    .texto-rojo{
+            font-size:40px;
+            font-weight: bold;
+            color:red;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <div class="nav" style="text-align:center;">
+      <h1>"Conocimiento sobre Ducati Panigale V4R"</h1>
+      <h4>Haz click en los puntos para conocer mas sobre esta motocicleta</h4>
+    </div>
+  </div>
+  <div id="seccion">
+    <div class="barra">
+        <div id="imagen-interactiva">
+          <div id="hotspot1"><span class="text-hotspot">1</span></div>
+          <div id="hotspot2"><span class="text-hotspot">2</span></div>
+          <div id="hotspot3"><span class="text-hotspot">3</span></div>
+          <div id="hotspot4"><span class="text-hotspot">4</span></div>
+          <div id="hotspot5"><span class="text-hotspot">5</span></div>
+          <div id="hotspot6"><span class="text-hotspot">6</span></div>
+
+        </div>
+    </div>
+    <div class="contenido">
+      <div class="subcontenido1">
+        <h1 id="titulo-info">Ducati Panigale V4R</h1>
+        <h3 id="texto-info">La Ducati Panigale es una de las motocicletas más emblemáticas y avanzadas de la marca italiana Ducati, reconocida mundialmente por su rendimiento en pista y su diseño de vanguardia. Inspirada en el espíritu de las motos de competición del MotoGP, la Panigale combina ingeniería de precisión, potencia extrema y una estética inconfundible.</h3>
+      </div>
+      </div>
+      <div id="resultado" class="invisible">
+        <h2>Tu resultado:</h2>
+        <span id="calif" class="texto-rojo">0/0</span>
+        <img id="imagen-resultado" width="200px" src="images/ping.gif" />
+      </div>      
+    </div>
+  </div>
+  <div id="footer">
+    <div id="prueba"><img width="100px" src="images/test.png" /></div>
+  </div>
+  <script type="text/javascript">
+    let puntaje = 0;
+    let pregunta1 = "";
+
+    document.getElementById('hotspot1').onclick = function() {
+      document.getElementById('titulo-info').textContent = 'Motor';
+      document.getElementById('texto-info').textContent = 'El motor de la Ducati Panigale V4 R es un Desmosedici Stradale R, un V4 a 90° de 998 cc, derivado de la MotoGP. Usa refrigeración líquida y un cigüeñal contrarrotante que mejora la estabilidad. Entrega 218 CV a 15 750 rpm y hasta 235 CV con escape de competición, además de 114.5 Nm de par. Su sistema de inyección electrónica y admisión variable optimiza la potencia a cualquier régimen. Es un motor creado para competencias de Superbikes, combinando potencia extrema, ligereza y precisión.';
+      document.getElementById('imagen-info').setAttribute('src', 'images/motor.jpg');    
+    };
+
+    document.getElementById('hotspot2').onclick = function() {
+      document.getElementById('titulo-info').textContent = 'Frenos';
+      document.getElementById('texto-info').textContent = 'La Ducati Panigale V4 R utiliza un sistema de frenos de alto rendimiento Brembo, con dobles discos delanteros de 330 mm y pinzas monobloque radiales de 4 pistones, junto a un disco trasero de 245 mm con pinza de 2 pistones. Incorpora ABS en curva, que mantiene la estabilidad incluso al frenar con la moto inclinada. Este sistema avanzado, junto con las suspensiones Öhlins electrónicas, proporciona un control excepcional y una capacidad de frenado superior en todas las condiciones de conducción.';
+    };
+
+    document.getElementById('hotspot3').onclick = function(){
+      document.getElementById('titulo-info').textContent = 'Sistema Electrónico';
+      document.getElementById('texto-info').textContent = 'La Ducati Panigale V4 R cuenta con un avanzado paquete electrónico derivado de MotoGP, basado en una plataforma inercial de seis ejes que controla todos los sistemas de asistencia. Utiliza el algoritmo Ducati Vehicle Observer (DVO), capaz de anticipar movimientos y ajustar la tracción y estabilidad en tiempo real.';
+      document.getElementById('imagen-info').setAttribute('src', 'images/alectronica.jpg');
+    };
+    document.getElementById('hotspot4').onclick = function(){
+      document.getElementById('titulo-info').textContent = 'Chasis';
+      document.getElementById('texto-info').textContent = 'El chasis de la Ducati Panigale V4 R es un monocasco de aluminio que integra el motor como elemento estructural, lo que reduce el peso total y mejora la rigidez torsional. Esta configuración permite una distribución óptima del peso, mejorando la maniobrabilidad y estabilidad en curvas. Además, cuenta con un basculante trasero de aluminio y una suspensión Öhlins ajustable electrónicamente, que ofrece un rendimiento excepcional tanto en pista como en carretera.';
+      document.getElementById('imagen-info').setAttribute('src', 'images/chasis.jpg');
+    };
+    document.getElementById('hotspot5').onclick = function(){
+      document.getElementById('titulo-info').textContent = 'Diseño Aerodinámico';
+      document.getElementById('texto-info').textContent = 'El diseño aerodinámico de la Ducati Panigale V4 R está inspirado en las motos de competición, con carenados que optimizan el flujo de aire para reducir la resistencia y aumentar la estabilidad a altas velocidades. Incorpora alas aerodinámicas que generan carga descendente, mejorando la adherencia en curvas y frenadas. Este enfoque no solo mejora el rendimiento en pista, sino que también contribuye a una experiencia de conducción más segura y controlada.';
+      document.getElementById('imagen-info').setAttribute('src', 'images/aerodinamica.jpg');
+    };
+    document.getElementById('hotspot6').onclick = function(){
+      document.getElementById('titulo-info').textContent = 'Electrónica de Asistencia al Piloto';
+      document.getElementById('texto-info').textContent = 'La Ducati Panigale V4 R está equipada con un sistema avanzado de electrónica de asistencia al piloto, que incluye control de tracción (DTC), control de wheelie (DWC), control de freno motor (EBC), y modos de conducción ajustables. Estos sistemas trabajan en conjunto para optimizar el rendimiento y la seguridad, adaptándose a las condiciones de la pista y al estilo de conducción del piloto. La integración de estas tecnologías permite a los pilotos aprovechar al máximo la potencia y el manejo de la moto, tanto en competición como en carretera.';
+      document.getElementById('imagen-info').setAttribute('src', 'images/asistencia.jpg');
+    };
+    document.getElementById('prueba').onclick = function(){
+      alert("Bienvenidos a la prueba de conocimientos");
+      alert("Responde correctamente todas las preguntas para ganar");
+    }
+
+          const preguntas = [
+      { pregunta: "¿Cuál es el nombre completo del modelo más potente de la línea Panigale?", respuesta: "panigale v4r" },
+      { pregunta: "¿Cuántos cilindros tiene el motor de la Panigale V4R?", respuesta: "cuatro" },
+      { pregunta: "¿Qué tipo de motor usa la Panigale V4R? (Pista: Desmosedici...)", respuesta: "stradale r" },
+      { pregunta: "¿Cuál es la cilindrada aproximada del motor? (en centímetros cúbicos)", respuesta: "998" },
+      { pregunta: "¿De qué material está fabricado principalmente el chasis?", respuesta: "aluminio" },
+      { pregunta: "¿Qué marca fabrica el sistema de frenos de la Panigale V4R?", respuesta: "brembo" },
+      { pregunta: "¿Qué elemento ayuda a reducir el levantamiento del tren delantero?", respuesta: "aerodinamica" },
+      { pregunta: "¿Qué tipo de transmisión usa? (manual, automática o quickshifter)", respuesta: "quickshifter" },
+      { pregunta: "¿Qué sistema controla la tracción y el freno motor?", respuesta: "ducati traction control" },
+      { pregunta: "¿Cuál es el país de origen de la marca Ducati?", respuesta: "italia" }
+    ];
+
+    document.getElementById('prueba').onclick = function() {
+      let puntaje = 0;
+      alert("🏁 Bienvenido a las preguntas de la Ducati Panigale V4R. Responde las 10 preguntas.");
+      preguntas.forEach((item, index) => {
+        let respuestaUsuario = prompt(`Pregunta ${index + 1}/10: ${item.pregunta}`);
+        if (respuestaUsuario) {
+          let limpia = respuestaUsuario.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+          if (limpia.includes(item.respuesta)) {
+            puntaje++;
+            alert(` ¡Correcto! Llevas ${puntaje} puntos.`);
+          } else {
+            alert(` Incorrecto. La respuesta era: ${item.respuesta}.`);
+          }
+        } else {
+          alert("Respuesta omitida. Se contará como incorrecta.");
+        }
+      });
+      alert(` ¡Has terminado! Tu puntaje final es: ${puntaje}/10`);
+      document.getElementById("calif").textContent = `${puntaje}/10`;
+      document.getElementById("resultado").setAttribute("class", "visible");
+    };
+  </script>
+</body>
+</html>
