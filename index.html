@@ -231,12 +231,15 @@
       <div class="subcontenido1">
         <h1 id="titulo-info">Ducati Panigale V4R</h1>
         <h3 id="texto-info">La Ducati Panigale es una de las motocicletas más emblemáticas y avanzadas de la marca italiana Ducati, reconocida mundialmente por su rendimiento en pista y su diseño de vanguardia. Inspirada en el espíritu de las motos de competición del MotoGP, la Panigale combina ingeniería de precisión, potencia extrema y una estética inconfundible.</h3>
+        <div style="text-align:center; margin-top:12px;">
+          <img id="imagen-info" src="images/motor.jpg" width="250" alt="Imagen informativa" style="border-radius:8px;" />
+        </div>
       </div>
       </div>
       <div id="resultado" class="invisible">
         <h2>Tu resultado:</h2>
         <span id="calif" class="texto-rojo">0/0</span>
-        <img id="imagen-resultado" width="200px" src="images/ping.gif" />
+        <img id="imagen-resultado" width="200px" src="images/test.png" />
       </div>      
     </div>
   </div>
@@ -261,22 +264,22 @@
     document.getElementById('hotspot3').onclick = function(){
       document.getElementById('titulo-info').textContent = 'Sistema Electrónico';
       document.getElementById('texto-info').textContent = 'La Ducati Panigale V4 R cuenta con un avanzado paquete electrónico derivado de MotoGP, basado en una plataforma inercial de seis ejes que controla todos los sistemas de asistencia. Utiliza el algoritmo Ducati Vehicle Observer (DVO), capaz de anticipar movimientos y ajustar la tracción y estabilidad en tiempo real.';
-      document.getElementById('imagen-info').setAttribute('src', 'images/alectronica.jpg');
+      document.getElementById('imagen-info').setAttribute('src', 'images/electrical%20system.jpg');
     };
     document.getElementById('hotspot4').onclick = function(){
       document.getElementById('titulo-info').textContent = 'Chasis';
       document.getElementById('texto-info').textContent = 'El chasis de la Ducati Panigale V4 R es un monocasco de aluminio que integra el motor como elemento estructural, lo que reduce el peso total y mejora la rigidez torsional. Esta configuración permite una distribución óptima del peso, mejorando la maniobrabilidad y estabilidad en curvas. Además, cuenta con un basculante trasero de aluminio y una suspensión Öhlins ajustable electrónicamente, que ofrece un rendimiento excepcional tanto en pista como en carretera.';
-      document.getElementById('imagen-info').setAttribute('src', 'images/chasis.jpg');
+      document.getElementById('imagen-info').setAttribute('src', 'images/motor.jpg');
     };
     document.getElementById('hotspot5').onclick = function(){
       document.getElementById('titulo-info').textContent = 'Diseño Aerodinámico';
       document.getElementById('texto-info').textContent = 'El diseño aerodinámico de la Ducati Panigale V4 R está inspirado en las motos de competición, con carenados que optimizan el flujo de aire para reducir la resistencia y aumentar la estabilidad a altas velocidades. Incorpora alas aerodinámicas que generan carga descendente, mejorando la adherencia en curvas y frenadas. Este enfoque no solo mejora el rendimiento en pista, sino que también contribuye a una experiencia de conducción más segura y controlada.';
-      document.getElementById('imagen-info').setAttribute('src', 'images/aerodinamica.jpg');
+      document.getElementById('imagen-info').setAttribute('src', 'images/test.png');
     };
     document.getElementById('hotspot6').onclick = function(){
       document.getElementById('titulo-info').textContent = 'Electrónica de Asistencia al Piloto';
       document.getElementById('texto-info').textContent = 'La Ducati Panigale V4 R está equipada con un sistema avanzado de electrónica de asistencia al piloto, que incluye control de tracción (DTC), control de wheelie (DWC), control de freno motor (EBC), y modos de conducción ajustables. Estos sistemas trabajan en conjunto para optimizar el rendimiento y la seguridad, adaptándose a las condiciones de la pista y al estilo de conducción del piloto. La integración de estas tecnologías permite a los pilotos aprovechar al máximo la potencia y el manejo de la moto, tanto en competición como en carretera.';
-      document.getElementById('imagen-info').setAttribute('src', 'images/asistencia.jpg');
+      document.getElementById('imagen-info').setAttribute('src', 'images/test.png');
     };
     document.getElementById('prueba').onclick = function(){
       alert("Bienvenidos a la prueba de conocimientos");
